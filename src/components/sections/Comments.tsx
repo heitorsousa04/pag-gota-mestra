@@ -73,7 +73,7 @@ export function Comments() {
           O Que Dizem Sobre o Dossiê
         </h2>
         <p className="text-center text-gray-400 mb-12 text-sm">
-          {allVisible.length} comentários
+          +{allVisible.length + 847} comentários
         </p>
 
         <div className="space-y-6 mb-8">

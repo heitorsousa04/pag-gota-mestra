@@ -50,7 +50,7 @@ export function SocialProof() {
             <div className="flex" style={{ transform: `translateX(-${current * 100}%)`, transition: 'transform 0.4s ease-out' }}>
               {reviews.map((img, i) => (
                 <div key={i} className="shrink-0 w-full">
-                  <img src={img} alt={`Depoimento ${i + 1}`} className="w-full h-[500px] md:h-[600px] object-cover" loading="lazy" />
+                  <img src={img} alt={`Depoimento ${i + 1}`} className="w-full aspect-[9/16] object-cover" loading="lazy" />
                 </div>
               ))}
             </div>
