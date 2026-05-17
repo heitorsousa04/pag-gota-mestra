@@ -47,13 +47,13 @@ export function UpsellModal({ isOpen, onClose }: UpsellModalProps) {
           <p className="font-display font-bold text-3xl text-primary">Por R$34,90</p>
         </div>
 
-        <a href="PLACEHOLDER_CHECKOUT_UPSELL" className="block mb-3">
+        <a href="https://pay.wiapy.com/iPtQHIhqjt" className="block mb-3">
           <button className="w-full py-4 rounded-xl bg-primary hover:bg-primary-dark text-white font-display font-bold text-sm uppercase tracking-widest transition-all hover:-translate-y-0.5 shadow-lg">
             SIM! QUERO A SELVA BLINDADA POR R$34,90
           </button>
         </a>
 
-        <a href="PLACEHOLDER_CHECKOUT_BASICO" className="block">
+        <a href="https://pay.wiapy.com/w7o_dtC5RT" className="block">
           <button className="w-full py-3 rounded-xl border-0 text-gray-400 text-xs font-medium hover:text-gray-600 transition-colors">
             Não, quero continuar pagando mais caro
           </button>

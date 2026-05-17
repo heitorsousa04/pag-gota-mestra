@@ -97,7 +97,7 @@ export function Pricing() {
             </ul>
           </div>
 
-          <a href="PLACEHOLDER_CHECKOUT_COMPLETO" className="block">
+          <a href="https://pay.wiapy.com/hrGwtDGaaC" className="block">
             <button className="w-full py-4 rounded-xl bg-[#16a34a] hover:bg-[#15803d] text-white font-display font-bold uppercase tracking-widest text-sm transition-all hover:-translate-y-0.5 shadow-lg">
               QUERO A SELVA BLINDADA
             </button>

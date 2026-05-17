@@ -15,6 +15,38 @@
     <!-- Utmify Pixel ID: PLACEHOLDER_UTMIFY_PIXEL -->
     <!-- Utmify UTMs script: PLACEHOLDER_UTMIFY_UTM -->
     <!-- Clarity ID: PLACEHOLDER_CLARITY -->
+
+    <script>
+      // Evita o erro "Converting circular structure to JSON" do pixel utmify
+      // quando tenta serializar elementos DOM do React
+      if (typeof Element !== 'undefined' && !Element.prototype.toJSON) {
+        Element.prototype.toJSON = function() {
+          return {
+            tagName: this.tagName,
+            className: this.className,
+            id: this.id,
+            href: this.href || undefined,
+            name: this.name || undefined
+          };
+        };
+      }
+    </script>
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-xcod-sck
+      data-utmify-prevent-subids
+      async
+      defer
+    ></script>
+
+    <script>
+      window.pixelId = "6a0a3e2b3d863bdc7567a77d";
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+      document.head.appendChild(a);
+    </script>
   </head>
   <body class="font-sans antialiased text-[#1a1a1a] bg-white">
     <div id="root"></div>
